@@ -10,14 +10,14 @@ public class merge_arr1_arr2_with_arr3 {
          int index=0;
         for(int i=0;i<arr1.length;i++){
             arr3[index]=arr1[i];
-            arr3[index2]=arr2[i];
+            index=index+2;
             
-           
         }
         
         
         int index2=1;
         for(int i=0;i<arr2.length;i++){
+            arr3[index2]=arr2[i];
             index2=index2+2;
         }
 
