@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class first_odd_than_even {
     public static void main(String[] args) {
