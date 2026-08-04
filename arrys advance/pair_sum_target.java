@@ -2,16 +2,26 @@ public class pair_sum_target {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
         int target=5;
-
+        boolean found=false;
         for(int i=0;i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){
                 if(arr[i]+arr[j]==target){
-                System.out.println("find");
-                return;
+                found=true;
+                break;
             }
+             }
+
+            if(found){
+                break;
             }
+
+           
            
         }
-        System.out.println("not find");
+        if(found){
+            System.out.println("found");
+        }else{
+            System.out.println("not found");
+        }
     }
 }
