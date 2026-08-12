@@ -6,7 +6,8 @@ public class pair_sum_using_binary {
         for(int i=0;i<arr.length;i++){
             int start=i+1;
             int end=arr.length-1;
-
+            
+            
             while (start <= end) {
                 int mid=(start+end)/2;
 

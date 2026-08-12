@@ -24,5 +24,6 @@ public class move_zero_and_one_optimize {
         }
         System.out.println(Arrays.toString(arr));
         
+        
     }
 }
