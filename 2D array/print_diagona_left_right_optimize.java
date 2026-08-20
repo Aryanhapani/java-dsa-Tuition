@@ -8,7 +8,7 @@ public class print_diagona_left_right_optimize {
         };
 
         int row=matrix.length;
-        int col=matrix[0].length;
+        // int col=matrix[0].length;
 
         for(int i=0;i<row;i++){
             System.out.print(matrix[i][i]+ " ");
