@@ -16,7 +16,7 @@ public class delete_max_element_form_each_col {
                     max=i;
                 }
             }
-            for(int k=max;k<row-1;k++){
+            for(int k=max;k<row-1;k++){ 
                 mat[k][j]=mat[k+1][j];
             }
         }
