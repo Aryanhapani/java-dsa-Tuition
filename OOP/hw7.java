@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class hw7 {
-    Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
         student s1=new student();
         s1.input(sc);
         System.out.println("student1:-");
