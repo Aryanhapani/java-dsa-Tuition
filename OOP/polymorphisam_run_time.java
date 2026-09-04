@@ -10,6 +10,7 @@ public class polymorphisam_run_time {
             bank=new SBI();
         }else{
             bank=new Kotak();
+        
         }
         bank.printintrest();
     }
