@@ -13,7 +13,7 @@ public class print_rev_brute {
          String[] strings=str.split(" ");
 
          for (int i=0;i<strings.length;i++){
-           String sout=  rev(strings[i]);
+           String sout=rev(strings[i]);
              System.out.print(sout+" ");
          }
 
