@@ -12,6 +12,7 @@ public class stack_program {
     }
     //element for peek
     public static int peek(int[] stack,int top){
+    //if stack is empty
         if (isempty(top)) {
             System.out.println("stack is empty");
             return -1;
@@ -31,6 +32,7 @@ public class stack_program {
 
     //pop element form stack
     public static int pop(int[] stack,int top){
+        //if stack is empty
         if (isempty(top)) {
             System.out.println("stack is underflow");
             return top;
