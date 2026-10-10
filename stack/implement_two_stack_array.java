@@ -30,6 +30,10 @@ public class implement_two_stack_array {
     }
 
     public static int pop1(int[] stack,int top1){
+        if (top1==-1) {
+            System.out.println("satck is underflow");
+            return top1;
+        }
         return stack[top1];
     }
 
@@ -50,6 +54,10 @@ public class implement_two_stack_array {
     }
 
     public static int pop2(int[] stack,int top2){
+         if (top2==stack.length) {
+            System.out.println("satck is underflow");
+            return top2;
+        }
         return stack[top2];
     }
 
@@ -74,29 +82,29 @@ public class implement_two_stack_array {
 
 //poped element from stack1
 
-//    while (top1 >= 0){
-//        System.out.println(pop1(stack, top1));
-//        top1--;
-//    }
+   while (top1 >= 0){
+       System.out.println(pop1(stack, top1));
+       top1--;
+   }
 
 
 //poped element from stack2
 
 //
-//    while (top2 < stack.length){
-//            System.out.println(pop2(stack, top2));
-//            top2++;
-//        }
+   while (top2 < stack.length){
+           System.out.println(pop2(stack, top2));
+           top2++;
+       }
 
 
 //peek element form stack1
 
-        System.out.println(peek1(stack, top1));
+        // System.out.println(peek1(stack, top1));
 
 
 //peek element form stack2
 
-        System.out.println(peek2(stack, top2));
+        // System.out.println(peek2(stack, top2));
 
 
 

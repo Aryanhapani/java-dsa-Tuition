@@ -13,7 +13,7 @@ public class postfix_to_prefix {
         return false;
     }
 
-    public static String conert(String str){
+    public static String convert(String str){
         Stack<String> stack=new Stack<>();
         for (int i=0;i<str.length();i++){
             char ch= str.charAt(i);
@@ -30,6 +30,7 @@ public class postfix_to_prefix {
     }
     public static void main(String[] args) {
         String s="ABC/-AK/L-*";
-        System.out.println(conert(s));
+        System.out.println(convert(s));
+        
     }
 }

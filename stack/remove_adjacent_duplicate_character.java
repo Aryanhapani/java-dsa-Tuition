@@ -19,5 +19,6 @@ public class remove_adjacent_duplicate_character {
 
 
         System.out.println(max);
+       
      }
 }
