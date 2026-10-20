@@ -66,38 +66,37 @@ class Linklist{
 
     }
 
-    public void delete(int k){
-        Node temp=head;
-        Node previous=null;
-        boolean found=false;
-        while (temp != null){
-            if (temp.data==k){
-                found=true;
-                if (temp==head){
-                    head=head.next;
-                    temp=head;
-                    if (head==null){
-                        tail=null;
-                    }
-                }else{
-                    previous.next=temp.next;
-                    if (temp==tail){
-                        tail=previous;
-                    }
-                    temp=previous.next;
-                }
+  public void delete(int k){
 
+        if (head==tail && head.data==k) {
+            head=tail=null;
+        }else if (head.data==k){
+            Node temp=head;
+            head=head.next;
+            temp.next=null;
+            delete(k);
+        }else{
+            Node prev=head;
+            while (prev.next != null && prev.next.data==k){
+                prev=prev.next;
+            }
+
+            if (prev.next==null){
+                System.out.println("not found element");
+                return;
+            }
+
+            if (prev.next == tail){
+                prev.next=null;
+                tail=prev;
+                delete(k);
             }else{
-                previous=temp;
-                temp=temp.next;
-
+                Node temp=prev.next;
+                prev.next=prev.next.next;
+                temp.next=null;
+                delete(k);
             }
         }
-
-        if (!found){
-            System.out.println("not found");
-        }
-
     }
     public void find(int value){
         Node temp=head;
@@ -113,6 +112,35 @@ class Linklist{
 
 
 
+    }
+
+     public void removeduplicate(){
+        Node curr=head;
+        Node prev=null;
+
+        while (curr!=null){
+
+        boolean flag=false;
+            Node temp=head;
+            while (curr != temp){
+                if (curr.data==temp.data){
+                    flag=true;
+                    break;
+                }
+
+                temp=temp.next;
+            }
+
+            if (flag){
+                prev.next=curr.next;
+            }else {
+                prev=curr;
+            }
+
+          curr=curr.next;
+
+
+        }
     }
 }
 

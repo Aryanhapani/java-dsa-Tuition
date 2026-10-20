@@ -1,8 +1,9 @@
 public class create_circular_without_tail {
     public static void main(String[] args) {
        circular a=new circular();
-       a.insert(576);
-       
+       a.insert(10);
+       a.insert(20);
+       a.insert(30);
        a.print();
     }
 }
@@ -39,6 +40,15 @@ class circular{
           System.out.println(temp.data);
           temp=temp.next;
         }while(temp != head);
+    }
+
+    public void reverse(){
+       Node first = head;
+       Node last = head;
+       while(last.next != head){
+        last = last.next;
+       }
+
     }
 }
 
