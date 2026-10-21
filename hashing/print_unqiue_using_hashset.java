@@ -15,9 +15,16 @@ public class print_unqiue_using_hashset {
                 seen.add(arr[i]);
             }
         }
-        System.out.println(duplicate);
-        seen.removeAll(duplicate);
-        System.out.println(seen);
+
+    //print unique element
+        for(int i=0;i<arr.length;i++){
+            if(!duplicate.contains(arr[i])){
+                System.out.println(arr[i]);
+            }
+        }
+        // System.out.println(duplicate);
+        // seen.removeAll(duplicate);
+        // System.out.println(seen);
 
     }
 }
